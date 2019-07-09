@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <script>
+      function msg(){
+        var val=uname.value;
+        if(val==""){
+          ms.innerHTML="用户名不能为空";
+        }else{
+          ms.innerHTML="请验证用户名是否可用";
+        }
+      }
+      function check(){
+        var $uname=uname.value;
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange=function(){
+          if(xhr.readyState==4&&xhr.status==200){
+            var result=xhr.responseText;
+            if(result=="0"){
+              bs.innerHTML="当前用户名可用";
+            }else{
+              bs.innerHTML="当前用户名不可用";
+            }
+          }
+        }
+        xhr.open("get","/pro/v1/reg_check/"+$uname,true);
+        xhr.send();
+      }
+      function show(){
+        var $uname=uname.value;
+        var a=upwd1.value;
+        var b=upwd2.value;
+        if(a===b && ms.innerHTML=="请验证用户名是否可用" && bs.innerHTML=="当前用户名可用"){
+          var xhr=new XMLHttpRequest();          
+          xhr.onreadystatechange=function(){
+            if(xhr.readyState==4&&xhr.status==200){
+              var result=xhr.responseText;
+              console.log(2222);
+              if(result=="1"){
+                alert("注册成功");
+                return;
+              }else{
+                alert("注册失败");
+                return;
+              }
+            }
+          }
+          xhr.open("post","/pro/v1/reg",true);
+          var formdata="uname="+$uname+"&upwd="+a;
+          xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+          xhr.send(formdata);
+        }else{
+          alert("不满足注册条件");
+          return;
+        } 
+      }
+    </script>
+  </head>
+  <body>
+  用户名：<input type="text" id="uname" onblur="msg()"><span id="ms"></span>
+  <button onclick="check()">验证用户名是否可用</button><span id="bs"></span><br>
+  密码：<input type="text" id="upwd1"><br>
+  重新输入密码：<input type="text" id="upwd2"><br>
+  <button onclick="show()">注册</button>
+  </body>
+</html>
