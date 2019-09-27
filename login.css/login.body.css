@@ -1,0 +1,43 @@
+/* ul去点 */
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+/* 用户名输入框 */
+
+.list-user-name {
+    float: left;
+}
+
+
+/* input行高 */
+
+.list-input-height {
+    height: 30px;
+    position: absolute;
+    top: 242px;
+    left: 598px;
+    padding-left: 30px;
+    width: 200px;
+}
+
+
+/* 用户名图片 */
+
+.list-user-name-img {
+    float: left;
+    position: absolute !important;
+    top: 242px;
+    left: 598px;
+}
+
+
+/* 精灵图 */
+
+.script.login {
+    width: 20px;
+    height: 10px;
+}

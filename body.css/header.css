@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: '|';
+}
+
+
+/* 头部底层横线 */
+
+.top-hr {
+    border: 2px solid #ff464e;
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+
+/* 导航栏样式 */
+
+.text-mutede {
+    color: #000 !important;
+    width: 85px;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.0rem 0rem;
+}
+
+
+/* 导航栏字体样式 */
+
+.nav-data ul li {
+    margin-top: 25px;
+    list-style: none;
+    width: 150px;
+    line-height: 14px;
+    text-align: center;
+    font-size: 14px;
+    float: left;
+    position: relative;
+    color: #000;
+    padding: 0px;
+}
+
+.action {
+    background: #ff464e;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: #f6f6f6;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+}
+
+.nav-data ul li a:hover {
+    color: #ff464e
+}
+
+
+/* 背景颜色 */
+
+.bar {
+    background: #f6f6f6;
+    width: 100%;
+    display: flex;
+    flex-direction: Row-reverse;
+    font: 12px/1.5 "微软雅黑", Tahoma, Helvetica, Arial, '宋体', sans-serif, \5b8b\4f53;
+    line-height: 29px;
+    height: 30px;
+    text-decoration: none;
+}
+
+
+/* 免费注册字体样式 */
+
+.text-mutedr {
+    color: #ff464e !important;
+}
+
+
+/* 顶部精灵图 */
+
+.Ghost {
+    background-image: url(../../global/sidebar.png);
+    background-repeat: no-repeat;
+    height: 10px;
+    background-position: -25px -23px;
+    padding: 0 20px;
+}
+
+
+/* 导航栏精灵图 */
+
+.Phone {
+    background-image: url(../../global/sidebar.png);
+    background-repeat: no-repeat;
+    height: 10px;
+    background-position: -25px -23px;
+    padding: 0 20px;
+}
+
+
+/* 页面头精灵图 */
+
+.top-Ghost {
+    background-image: url(../../global/header-total.gif);
+    background-repeat: no-repeat;
+    height: 47px;
+    background-position: -77px -55px;
+    width: 28%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+
+/* 页面头精灵图 */
+
+.top-Ghost2 {
+    background-image: url(../../global/header-total.gif);
+    background-repeat: no-repeat;
+    height: 37px;
+    background-position: 32px 6px;
+    width: 48%;
+    padding-bottom: 20px;
+    margin-left: 9%;
+    margin-top: 20px;
+}
+
+
+/* input搜索栏 */
+
+.top-input {
+    background-image: url(../../global/header-total.gif);
+    background-repeat: no-repeat;
+    height: 37px;
+    background-position: -281px -67px;
+    width: 40%;
+    margin-left: 91%;
+    font-size: 14px;
+    cursor: pointer;
+}

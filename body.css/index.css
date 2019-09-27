@@ -1,0 +1,499 @@
+        body {
+            background: #f6f6f6;
+            color: #666;
+            height: 100%;
+            min-width: 100%;
+        }
+        /* 今日品牌后的ul */
+        
+        .fr {
+            font: 12px/1.5 "微软雅黑", Tahoma, Helvetica, Arial, '宋体', sans-serif, \5b8b\4f53;
+            list-style: none;
+            float: right;
+            display: inline;
+            margin-right: 6px;
+        }
+        /* div今日品牌 */
+        
+        .today {
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .today_brand {
+            margin-right: 10px;
+            font-weight: normal;
+            font-size: 16px;
+            color: #bbb;
+            margin-left: 10px;
+        }
+        /* 全部商品后精灵图 */
+        
+        .next {
+            background: url(../../global/index/icon_arrow-new.png) no-repeat left center;
+            width: 9px;
+            height: 10px;
+            display: inline-block;
+            margin-top: -1px;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+        /* 精灵图左边全部商品 */
+        
+        .active {
+            margin-top: 20px;
+            color: #ff464e;
+        }
+        /* 今日品牌父元素 */
+        
+        .border-bottom {
+            border-width: 3px !important;
+            width: 100%;
+            font: 12px/1.5 "微软雅黑", Tahoma, Helvetica, Arial, '宋体', sans-serif, \5b8b\4f53;
+            box-sizing: border-box;
+            padding: 0 16px;
+            line-height: 60px;
+            margin-top: 30px;
+            margin-left: 5px;
+            background: #fff;
+        }
+        
+        .clear:after,
+        .clear:before {
+            content: "";
+            display: table;
+        }
+        
+        .clear:after {
+            clear: both;
+            overflow: hidden;
+        }
+        /* 今日品牌 */
+        
+        .day {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+        }
+        /* 今日品牌TODAY'S BRAND */
+        
+        .title_font {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        /* 轮播图右边表格 */
+        
+        .r-table {
+            padding: 0;
+        }
+        
+        .tr-table {
+            width: 50%;
+            height: 20%;
+        }
+        
+        .tr-tabler {
+            width: 100%;
+            height: 20%;
+        }
+        /* 指示器右边 */
+        
+        td {
+            float: left;
+            width: 50%;
+            height: 54px;
+            overflow: hidden;
+            line-height: 53px;
+            text-align: center;
+            background: url(../../global/dotted_line.png) repeat-x bottom;
+        }
+        /* 表格女装精灵图 */
+        
+        .women {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            margin-right: 5px;
+            margin: 7px;
+        }
+        /* 表格男装精灵图 */
+        
+        .men {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -23px 0px;
+            margin-right: 5px;
+            margin: 7px;
+        }
+        /* 表格鞋子精灵图 */
+        
+        .shoes {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -47px 0px;
+            margin-right: 5px;
+            margin: 7px;
+        }
+        /* 表格箱包精灵图 */
+        
+        .package {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -72px 0px;
+            margin-right: 5px;
+            margin: 7px;
+        }
+        /* 表格母婴精灵图 */
+        
+        .baby {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -97px 0px;
+            margin-right: 5px;
+            margin: 7px;
+        }
+        /* 表格美妆精灵图 */
+        
+        .beauty {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -120px 0px;
+            margin-right: 5px;
+            margin: 7px;
+        }
+        /* 表格居家精灵图 */
+        
+        .home {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -144px 0px;
+            margin-right: 5px;
+            margin: 7px;
+        }
+        /* 表格家纺精灵图 */
+        
+        .textile {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -167px 0px;
+            margin-right: 5px;
+            margin: 7px;
+        }
+        /* 表格文体精灵图 */
+        
+        .sports {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -195px 0px;
+            margin-right: 5px;
+            margin: 7px;
+        }
+        /* 表格美食精灵图 */
+        
+        .food {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -217px 0px;
+            margin-right: 5px;
+            margin: 11px
+        }
+        /* 表格数码精灵图 */
+        
+        .digital {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -242px 0px;
+            margin-right: 5px;
+            margin: 7px;
+        }
+        /* 表格电器精灵图 */
+        
+        .appliance {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -265px 0px;
+            margin-right: 5px;
+            margin: 11px
+        }
+        /* 表格内衣精灵图 */
+        
+        .underwear {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -289px 0px;
+            margin-right: 5px;
+            margin: 7px;
+        }
+        /* 表格配饰精灵图 */
+        
+        .accessories {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background-image: url(../../global/table-img/ct_icons.png);
+            background-repeat: no-repeat;
+            background-position: -312px 0px;
+            margin: 11px
+        }
+        /* 表格中间竖线 */
+        
+        .body-table td+td::before {
+            content: '|';
+            color: #eeeeee;
+            padding-right: 10px;
+            margin-left: -24px;
+        }
+        /* 轮播图左边表格 */
+        
+        .body-table tr td a {
+            text-decoration: none;
+            color: #5e5e5e;
+            font-size: 14px;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        .body-tr {
+            width: 190px;
+            height: 377px;
+            overflow: hidden;
+            padding: 2px 10px 1px;
+            background-color: #fff;
+        }
+        /* 引入页面头宽度 */
+        
+        .my_header {
+            width: 100%;
+        }
+        /* 引入页面头的媒体查询 */
+        
+        @media screen and (min-width:992px) {
+            .my_header {
+                height: 10.3rem;
+            }
+        }
+        
+        @media screen and (max-width:991px) {
+            .my_header {
+                height: 10.3rem;
+            }
+        }
+        /* 引入页面尾部宽度 */
+        
+        .my_footer {
+            width: 100%;
+            height: 100%;
+        }
+        /* 引入页面尾部媒体查询 */
+        
+        @media screen and (min-width:992px) {
+            .my_footer {
+                height: 26rem;
+            }
+        }
+        
+        @media screen and (max-width:991px) {
+            .my_footer {
+                height: 26rem;
+            }
+        }
+        /* 轮播图 */
+        /* 轮播指示器 */
+        
+        @media screen and (min-width:992px) {
+            .carousel-indicators li {
+                height: 0.8rem;
+                width: 0.8rem;
+                margin-left: 0.4rem;
+                margin-right: 0.4rem
+            }
+        }
+        
+        @media screen and (max-width:991px) {
+            .carousel-indicators li {
+                height: 0.6rem;
+                width: 0.6rem;
+                margin-left: 0.25rem;
+                margin-right: 0.25rem
+            }
+        }
+        
+        .carousel-indicators li {
+            background: #fff;
+            border-radius: 50%;
+        }
+        
+        .carousel-indicators li.active {
+            background-color: #0aa1ed;
+        }
+        /* 轮播左右箭头 */
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 4%;
+            height: 20%;
+            background: #aaa;
+            border-radius: 0.25rem;
+            top: 40%;
+        }
+        /* 楼层标题的字体 */
+        
+        .title_font {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        /* 楼层标题图片 */
+        
+        .title_img_size {
+            width: 3rem
+        }
+        
+        .border_bottom {
+            border-width: 3px !important
+        }
+        /* 楼层的高度 */
+        
+        .top_height {
+            height: 377px;
+        }
+        
+        .bottom_height {
+            height: 233px;
+        }
+        
+        .bg_L {
+            background: #e8e8e8;
+        }
+        /* 解决外边距溢出 */
+        
+        .berfore_margin:before {
+            content: "";
+            display: table;
+        }
+        
+        .w-40 {
+            width: 40%
+        }
+        
+        .font24 {
+            font-size: 1.5rem;
+        }
+        /* 1L上半部左侧img位置 */
+        
+        .my_img_position {
+            margin-top: -350px;
+            margin-right: 25px;
+            transition: all 1s;
+        }
+        /* 图片的过渡终点 */
+        
+        .my_img_position:hover {
+            transform: scale(1.1)
+        }
+        /* 1L上班部分右侧img位置 */
+        
+        .my_img_positionr {
+            margin-top: -200px;
+            margin-right: 25px;
+            transition: all 1s;
+        }
+        /* 图片的过渡终点 */
+        
+        .my_img_positionr:hover {
+            transform: scale(1.1)
+        }
+        /* 下半部分最左侧img位置 */
+        
+        .my_img_positionl {
+            margin-top: -135px;
+            margin-right: 25px;
+            transition: all 1s;
+        }
+        /* 图片的过渡终点 */
+        
+        .my_img_positionl:hover {
+            transform: scale(1.1)
+        }

@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 底部字体 */
+
+.bottom-font {
+    font-size: 14px;
+    color: #999;
+}
+
+
+/* 底部图片 */
+
+.bottom-img {
+    color: #999999;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* 底部网站时间 */
+
+.ft-company {
+    text-align: center;
+    padding-top: 20px;
+    color: #c6c6c6;
+}
+
+
+/* 底部公司 */
+
+.bottom-fontr {
+    text-align: center;
+    padding-top: 20px;
+    color: #c6c6c6;
+}
+
+
+/* 底部hr红线 */
+
+.bot-hr {
+    width: 100%;
+    border: #ff464e solid 2px;
+}
+
+
+/* 底部精灵图 */
+
+.bot-spirit {
+    background-image: url(../../global/service_add.gif);
+    background-repeat: no-repeat;
+    height: 42px;
+    background-position: 0px 0px;
+    padding: 0 20px;
+    width: 87px;
+}
